@@ -30,9 +30,9 @@ StorageBase.prototype.generateUnique = function (store, dir, name, ext, i) {
     }
 
     if (ext) {
-        filename = path.join(dir, name + append + ext);
+        filename = path.join(name + append + ext);
     } else {
-        filename = path.join(dir, name + append);
+        filename = path.join(name + append);
     }
 
     return store.exists(filename).then(function (exists) {
