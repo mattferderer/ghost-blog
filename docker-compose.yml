@@ -1,0 +1,13 @@
+version: "2"
+services: 
+    fpguru_ghost:
+        container_name: fpguru_ghost
+        volumes: 
+        environment: 
+            #AWS S3 Storage
+            - AWS_ACCESS_KEY_ID=yfwlkfudlxikfervegyy
+            - AWS_OPTIONAL_CDN_URL=https://s3-us-east-1.amazonaws.com/bucket_name
+            - AWS_BUCKET_NAME=bucket_name
+            - AWS_REGION_SLUG=us-east-1
+            - AWS_SECRET_ACCESS_KEY=szfksllrcybunehcgumqcercrankthxugbrltpke
+            

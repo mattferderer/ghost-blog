@@ -21,18 +21,6 @@ config = {
             debug: false
         },
 
-        storage: {
-            active: 's3',
-            s3: {
-                accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-                assetHost: process.env.AWS_OPTIONAL_CDN_URL,
-                bucket: process.env.AWS_BUCKET_NAME,
-                region: process.env.AWS_REGION_SLUG,
-                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-            },
-        },
-       
-
         server: {
             host: '127.0.0.1',
             port: '2368'
